@@ -1,0 +1,162 @@
+.seat-selection-container {
+  background: #0f0f1a;
+  color: #fff;
+  min-height: 100vh;
+  padding: 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.seat-popup {
+  background: #1a1a2e;
+  padding: 40px;
+  border-radius: 12px;
+  text-align: center;
+  width: 320px;
+  margin: 100px auto;
+  box-shadow: 0 0 20px #00f2fe;
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+.seat-popup h2 {
+  margin-bottom: 20px;
+  color: #00f2fe;
+}
+
+.seat-popup input {
+  padding: 10px;
+  font-size: 18px;
+  width: 60px;
+  margin: 0 10px;
+  text-align: center;
+  border-radius: 6px;
+  border: none;
+  background: #27293d;
+  color: white;
+}
+
+.proceed-btn {
+  padding: 10px 20px;
+  margin-top: 20px;
+  background: #00f2fe;
+  border: none;
+  color: #000;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.proceed-btn:hover {
+  background: #00c2cb;
+}
+
+.show-heading {
+  text-align: center;
+  color: #00f2fe;
+  margin-bottom: 5px;
+}
+
+.show-time {
+  text-align: center;
+  color: #aaa;
+  margin-bottom: 30px;
+}
+
+.screen {
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 10px;
+  background: #444;
+  border-radius: 6px;
+  margin: 0 auto 30px auto;
+  width: 60%;
+  color: white;
+  box-shadow: 0 0 10px #00f2fe;
+}
+
+.seat-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+}
+
+.row {
+  display: flex;
+  gap: 10px;
+}
+
+.seat {
+  width: 40px;
+  height: 40px;
+  background: #2e2e3e;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.3s;
+}
+
+.seat:hover {
+  transform: scale(1.1);
+  background: #3e3e5e;
+}
+
+.seat.booked {
+  background: #555;
+  cursor: not-allowed;
+  text-decoration: line-through;
+}
+
+.seat.selected {
+  background: #00f2fe;
+  color: #000;
+  font-weight: bold;
+}
+
+.pay-now-container {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.total-cost {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #00f2fe;
+}
+
+.pay-now-button {
+  padding: 12px 30px;
+  background: #00f2fe;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 16px;
+  color: black;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.pay-now-button:hover {
+  background: #00c2cb;
+}
+
+.error-message {
+  color: red;
+  text-align: center;
+  font-size: 18px;
+  margin-top: 50px;
+}
+
+@keyframes fadeIn {
+  from {
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}

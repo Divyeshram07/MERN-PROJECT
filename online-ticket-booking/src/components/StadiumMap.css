@@ -1,0 +1,29 @@
+.stadium-container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .stadium-map {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .stadium-section {
+    padding: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    transition: 0.3s;
+  }
+  
+  .stadium-section:hover {
+    transform: scale(1.1);
+  }
+  
+  .section-A { background: #ff4d4d; color: white; }
+  .section-B { background: #4da6ff; color: white; }
+  .section-C { background: #4dff88; color: black; }
+  .section-D { background: #ffcc00; color: black; }
+  
